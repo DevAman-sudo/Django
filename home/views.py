@@ -3,7 +3,7 @@ from django.shortcuts import render, HttpResponse
 # Create your views here.
 # urls dispatching
 def index(request) :
-    return HttpResponse("this is devaman")
+    return render(request , 'index.html')
     
 def about(request) :
     return HttpResponse("this is about page")
