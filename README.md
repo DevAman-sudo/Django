@@ -2,4 +2,5 @@
 ## python manage.py runserver
 ## python manage.py makemigrations
 ## pthon manage.py migrate
-## 
+## python manage.py createsuperuser
+
