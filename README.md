@@ -10,3 +10,8 @@
 - admin.site.site_title = "UMSRA Admin Portal"
 - admin.site.index_title = "Welcome to UMSRA Researcher Portal"
 
+### Django Database Settings
+- Register your models in admin.py
+- admin.site.register(Contact)
+- 
+- code  'home.apps.HomeConfig',   this in settings.py at Installed apps
