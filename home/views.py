@@ -1,5 +1,6 @@
 from django.shortcuts import render, HttpResponse
 from home.models import Contact
+from django.contrib import messages
 
 # Create your views here.
 # urls dispatching
@@ -18,5 +19,6 @@ def contact(request) :
         email = request.POST.get('email')
         contact = Contact(name = name , email = email)
         contact.save()
+        messages.success(request, 'Form Been Submitted.')
         
     return render(request , 'contact.html')
